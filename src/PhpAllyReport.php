@@ -29,7 +29,7 @@ class PhpAllyReport implements \JsonSerializable
 
     public function __toString()
     {
-        return \json_encode($this->toArray());
+        return \json_encode($this->toArray(), JSON_PRETTY_PRINT);
     }
 
     public function getIssues()
